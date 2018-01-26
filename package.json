@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "build:development": "mkdir -p dist && babel src/FileSaver.js --out-file=dist/FileSaver.js",
     "build:production": "NODE_ENV=production npm run build:development -- --out-file=dist/FileSaver.min.js",
-    "build": "npm run build:development && npm run build:production",
+    "install": "npm run build:development && npm run build:production",
     "prepublishOnly": "npm run build"
   },
   "repository": {
